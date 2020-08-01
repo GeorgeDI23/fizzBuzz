@@ -23,7 +23,15 @@ public class FizzBuzz {
         return false;
     }
 
-    public String fizzBuzzAsString(int givenInt){
-        return null;
+    public String fizzBuzzAsString(Integer givenInt){
+        if(fizzBuzz(givenInt)){
+            return "fizzBuzz";
+        } else if(fizz(givenInt)){
+            return "fizz";
+        } else if(buzz(givenInt)){
+            return "buzz";
+        } else{
+            return givenInt.toString();
+        }
     }
 }
