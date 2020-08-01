@@ -1,8 +1,9 @@
 package ml.georgedi23;
 
 /**
- * Hello world!
- *
+ * FizzBuzz implementation
+ * Fizz for 3
+ * Buzz for 5
  */
 public class App 
 {
