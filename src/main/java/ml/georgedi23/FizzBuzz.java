@@ -15,4 +15,8 @@ public class FizzBuzz {
         }
         return false;
     }
+
+    public Boolean fizzBuzz(int givenInt){
+        return null;
+    }
 }

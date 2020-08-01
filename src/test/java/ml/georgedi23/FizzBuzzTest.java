@@ -63,4 +63,52 @@ public class FizzBuzzTest {
         //Then
         assertFalse(actual);
     }
+
+    @Test
+    public void fizzNBuzzTest(){
+        //Given
+        int givenInt = 15;
+
+        //When
+        boolean actual = fizzBuzzer.fizzBuzz(givenInt);
+
+        //Then
+        assertTrue(actual);
+    }
+
+    @Test
+    public void fizzNBuzzJustFizzTest(){
+        //Given
+        int givenInt = 3;
+
+        //When
+        boolean actual = fizzBuzzer.fizzBuzz(givenInt);
+
+        //Then
+        assertFalse(actual);
+    }
+
+    @Test
+    public void fizzNBuzzJustBuzzTest(){
+        //Given
+        int givenInt = 5;
+
+        //When
+        boolean actual = fizzBuzzer.fizzBuzz(givenInt);
+
+        //Then
+        assertFalse(actual);
+    }
+
+    @Test
+    public void fizzNBuzzNoFizzBuzzTest(){
+        //Given
+        int givenInt = 2;
+
+        //When
+        boolean actual = fizzBuzzer.fizzBuzz(givenInt);
+
+        //Then
+        assertFalse(actual);
+    }
 }
