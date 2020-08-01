@@ -28,6 +28,7 @@ public class FizzBuzzTest {
         assertTrue(actual);
     }
 
+    @Test
     public void fizzNoFizzTest(){
         //Given
         int givenInt = 5;
@@ -39,5 +40,27 @@ public class FizzBuzzTest {
         assertFalse(actual);
     }
 
+    @Test
+    public void buzzTest(){
+        //Given
+        int givenInt = 5;
 
+        //When
+        boolean actual = fizzBuzzer.buzz(givenInt);
+
+        //Then
+        assertTrue(actual);
+    }
+
+    @Test
+    public void buzzNoBuzzTest(){
+        //Given
+        int givenInt = 3;
+
+        //When
+        boolean actual = fizzBuzzer.buzz(givenInt);
+
+        //Then
+        assertFalse(actual);
+    }
 }

@@ -8,4 +8,8 @@ public class FizzBuzz {
         }
         return false;
     }
+
+    public Boolean buzz(int givenInt){
+        return null;
+    }
 }
