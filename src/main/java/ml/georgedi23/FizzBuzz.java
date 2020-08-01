@@ -10,6 +10,9 @@ public class FizzBuzz {
     }
 
     public Boolean buzz(int givenInt){
-        return null;
+        if(givenInt % 5 == 0){
+            return true;
+        }
+        return false;
     }
 }
