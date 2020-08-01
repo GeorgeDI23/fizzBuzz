@@ -111,4 +111,57 @@ public class FizzBuzzTest {
         //Then
         assertFalse(actual);
     }
+
+    @Test
+    public void fizzBuzzAsStringFizzTest(){
+        //Given
+        int givenInt = 3;
+        String expected = "fizz";
+
+        //When
+        String actual = fizzBuzzer.fizzBuzzAsString(givenInt);
+
+        //then
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fizzBuzzAsStringBuzzTest(){
+        //Given
+        int givenInt = 5;
+        String expected = "buzz";
+
+        //When
+        String actual = fizzBuzzer.fizzBuzzAsString(givenInt);
+
+        //Then
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fizzBuzzAsStringFizzBuzzTest(){
+        //Given
+        int givenInt = 15;
+        String expected = "fizzBuzz";
+
+        //When
+        String actual = fizzBuzzer.fizzBuzzAsString(givenInt);
+
+        //Then
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fizzBuzzAsStringNeitherTest(){
+        //Given
+        int givenInt = 2;
+        String expected = "2";
+
+        //When
+        String actual = fizzBuzzer.fizzBuzzAsString(givenInt);
+
+        //Then
+        assertEquals(expected, actual);
+    }
+
 }

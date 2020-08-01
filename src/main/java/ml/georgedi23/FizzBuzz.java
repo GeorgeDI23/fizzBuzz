@@ -22,4 +22,8 @@ public class FizzBuzz {
         }
         return false;
     }
+
+    public String fizzBuzzAsString(int givenInt){
+        return null;
+    }
 }
