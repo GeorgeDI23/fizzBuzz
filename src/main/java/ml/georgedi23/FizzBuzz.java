@@ -34,4 +34,8 @@ public class FizzBuzz {
             return givenInt.toString();
         }
     }
+
+    public String[] fizzBuzzArray(int[] givenIntArray){
+        return null;
+    }
 }
