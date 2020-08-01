@@ -20,15 +20,23 @@ public class FizzBuzzTest {
     public void fizzTest(){
         //Given
         int givenInt = 3;
-        String expected = "fizz";
-
 
         //When
-        String actual = fizzBuzzer.fizz(givenInt);
+        boolean actual = fizzBuzzer.fizz(givenInt);
 
         //Then
-        assertEquals(expected, actual);
+        assertTrue(actual);
+    }
 
+    public void fizzNoFizzTest(){
+        //Given
+        int givenInt = 5;
+
+        //When
+        boolean actual = fizzBuzzer.fizz(givenInt);
+
+        //Then
+        assertFalse(actual);
     }
 
 
