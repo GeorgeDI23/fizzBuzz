@@ -17,6 +17,9 @@ public class FizzBuzz {
     }
 
     public Boolean fizzBuzz(int givenInt){
-        return null;
+        if(fizz(givenInt) && buzz(givenInt)){
+            return true;
+        }
+        return false;
     }
 }
