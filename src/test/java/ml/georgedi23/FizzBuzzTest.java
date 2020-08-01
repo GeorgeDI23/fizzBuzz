@@ -168,7 +168,7 @@ public class FizzBuzzTest {
     public void fizzBuzzArrayTest(){
         //Given
         int[] givenIntArray = {1, 2, 3, 5, 8, 9, 12, 15, 30};
-        String[] expected = {"1", "2", "fizz", "8", "buzz", "fizz", "fizzBuzz", "fizzBuzz"};
+        String[] expected = {"1", "2", "fizz", "buzz", "8", "fizz", "fizz", "fizzBuzz", "fizzBuzz"};
 
         //when
         String[] actual = fizzBuzzer.fizzBuzzArray(givenIntArray);

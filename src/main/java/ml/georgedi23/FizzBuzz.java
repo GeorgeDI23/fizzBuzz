@@ -36,6 +36,10 @@ public class FizzBuzz {
     }
 
     public String[] fizzBuzzArray(int[] givenIntArray){
-        return null;
+        String[] fizzBuzzed = new String[givenIntArray.length];
+        for(int i = 0; i < givenIntArray.length; i++){
+            fizzBuzzed[i] = fizzBuzzAsString(givenIntArray[i]);
+        }
+        return fizzBuzzed;
     }
 }
